@@ -11,12 +11,9 @@
 import time
 start = time.time()
 
-import decimal
-
 VERBOSE = 0
 
 tot = 0
-context = decimal.Context
 for i in range(1,1001):
     tot += i**i
 
