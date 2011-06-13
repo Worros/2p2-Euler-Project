@@ -13,27 +13,7 @@ start = time.time()
 VERBOSE = 0
 
 def is_pallindrome(n):
-    """Function returns True if n is a pallindrome and False otherwise
-        - assumes n is a string
-        """
-    pallindrome = False
-
-    if len(n) == 1:
-        pallindrome = True
-    elif len(n) == 2:
-        a,b = n[0], n[-1]
-        if a == b:
-            pallindrome = True
-        else:
-            pallindrome = False
-    else:
-        a,b = n[0], n[-1]
-        if a == b:
-            pallindrome = is_pallindrome(n[1:-1])
-        else:
-            pallindrome = False
-    
-    return pallindrome
+    return n == n[::-1]
 
 maximum = 999
 i, j = maximum, maximum
