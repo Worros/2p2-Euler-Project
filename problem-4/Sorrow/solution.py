@@ -7,6 +7,8 @@
 #
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
+import time
+start = time.time()
 
 VERBOSE = 0
 
@@ -71,3 +73,7 @@ while i > imin:
 if VERBOSE: print "All palindromes found: %s" % all_pallindromes
 if VERBOSE: print "Total interations: %s" % total_iterations
 print "Solution: %s" % record 
+
+end = time.time() - start
+print "Time Taken: " + str(end) + "ms"
+
